@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Trendz | Home Bakery</title>
+    <!-- Google Fonts for a modern elegant look -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Decorative background shapes -->
+    <div class="decor1"></div>
+    <div class="decor2"></div>
+    <header>
+        <h1>Chef Trendz</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Baked With Love, Just For You!</h2>
+            <p>Delicate pastries, dreamy cakes, and sweet moments for every occasion.</p>
+            <a href="#menu" class="cta-btn">See Our Menu</a>
+        </div>
+        <img src="hero-cake.png" alt="Chef Trendz Cake" class="hero-img">
+    </section>
+
+    <section id="about">
+        <h2>About Chef Trendz</h2>
+        <p>
+            Welcome to Chef Trendz, where baking is an art! Our passion is to create memorable moments with every bite, using the finest ingredients and a touch of creativity. Whether it’s a birthday, wedding, or a cozy treat for yourself, our kitchen brings your sweet dreams to life.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="cake-menu.jpg" alt="Custom Cakes">
+                <h3>Custom Cakes</h3>
+                <p>Beautifully decorated cakes for all occasions. Choose your flavor and style!</p>
+                <span class="menu-price">from $40</span>
+            </div>
+            <div class="menu-card">
+                <img src="cupcake-menu.jpg" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <p>Fluffy cupcakes with creative toppings. Available in boxes of 6 or 12.</p>
+                <span class="menu-price">from $18/dozen</span>
+            </div>
+            <div class="menu-card">
+                <img src="cookie-menu.jpg" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Soft, chewy cookies in classic & seasonal flavors. Perfect for gifts and parties.</p>
+                <span class="menu-price">from $15/dozen</span>
+            </div>
+            <div class="menu-card">
+                <img src="pastry-menu.jpg" alt="Pastries">
+                <h3>Pastries</h3>
+                <p>Buttery pastries filled with fruit, cream, or chocolate. Freshly baked daily.</p>
+                <span class="menu-price">from $20/box</span>
+            </div>
+            <div class="menu-card">
+                <img src="special-menu.jpg" alt="Special Orders">
+                <h3>Special Orders</h3>
+                <p>Looking for something unique? Contact us for custom treats or catering.</p>
+                <span class="menu-price">Contact for quote</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="cake1.jpg" alt="Pink birthday cake">
+            <img src="cupcakes.jpg" alt="Assorted cupcakes">
+            <img src="cookies.jpg" alt="Decorated cookies">
+        </div>
+        <small>Follow us on Instagram for more!</small>
+    </section>
+
+    <section id="contact">
+        <h2>Order & Contact</h2>
+        <!-- PayPal Payment Button Integration -->
+        <div class="payment-section">
+            <h3>Order Online</h3>
+            <p>Pay securely via PayPal:</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="her-paypal@email.com">
+                <input type="hidden" name="item_name" value="Bakery Order">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="amount" value="20.00">
+                <button type="submit" class="paypal-btn">Pay with PayPal</button>
+            </form>
+            <small>For custom orders, please message us before paying.</small>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input id="name" type="text" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" required>
+            <label for="message">Your Order/Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <span>Follow us:</span>
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chef Trendz. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
